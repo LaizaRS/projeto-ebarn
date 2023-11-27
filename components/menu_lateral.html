@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu</title>
@@ -9,10 +10,16 @@
 <body>
   <div id="myModal" class="modal">
     <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>Deseja realmente sair?</p>
-      <button id="confirmLogout">Sim</button>
-      <button id="cancelLogout">Não</button>
+      <div class="cabecalho">
+        <p>Deseja realmente sair?</p>
+        <i class="close ph ph-x"></i>
+      </div>
+     
+      <div class="verificacao">
+        <button id="cancelLogout">Cancelar</button>
+        <button id="confirmLogout">Sim</button>
+      </div>
+
     </div>
   </div>
 
