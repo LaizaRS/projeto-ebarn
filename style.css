@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+}
+
+.super-daddy {
+  display: flex;
+  background-color: #ffff;
+  height: 100vh;
+}
+
+.direita{
+  margin-right: 20px;
+  width: 1000px;
+}
+
+iframe {
+  border: none;
+  height: auto;
+  width: 220px;
+}
+
+.topo {
+  margin: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  height: 132px;
+}
+
+.topo i {
+  font-size: 40px;
+}
+
+.topo i:first-child{
+  color: gray;
+}
+
+.topo i:nth-child(3) {
+  color: #13A166;
+}
+
+.pesquisa {
+  border: 2px solid #13A166;
+  border-radius: 20px;
+  height: 40px;
+  width: 560px;
+  display: flex;
+}
+
+.pesquisa i {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.pesquisa input {
+  flex: 1; 
+  border: none; 
+  outline: none; 
+  padding: 0 10px; 
+  border-radius: 20px;
+}
+
+.lista-de-tenant {
+  display: flex;
+  flex-direction: column; 
+  height: 80vh;
+  overflow-y: auto;
+  align-self: center;
+}
+
+.lista-de-tenant ul {
+  margin: auto;
+  columns: 2;
+}
+
+.lista-de-tenant ul li {
+  background: #13A166;
+  list-style: none;
+  border: 1px solid black;
+  width: 426px;
+  height: 59px;
+  border-radius: 8px;
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista-de-tenant ul li:first-child{
+  margin-top: 0;
+}

@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+ 
+}
+
+
+.menu {
+  width: 220px;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+}
+
+.direita {
+  font-size: 16px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin: 10px;
+  height: 44px;
+  border-radius: 8px;
+}
+
+.menu ul li:hover {
+  background: white;
+  color: black;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 15px;
+}
+
+.menu ul li i {
+  margin-right: 10px;
+}
+
+.menu ul button {
+  width: 100%;
+  height: 100%;
+  background: initial;
+  border: initial;
+  color: white;
+}
+
+.menu ul button p{
+  margin-bottom: 17px;
+}
+
+.menu ul button:hover {
+  color: black;
+}
+
+
+/* Estilos para o modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  position: relative;
+  z-index: 99999; 
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+/* Estilos para os botões do modal */
+#confirmLogout, #cancelLogout {
+  margin: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+
+/* iframe {
+  border: none;
+  height: auto;
+  width: auto;
+}
+
+
+.terminal {
+  width: 436px;
+  height: 213px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #13a166;
+  height: 68px;
+  padding: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.verificacao {
+  width: 436px;
+  height: 190px;
+  border: 3px solid #13a166;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #13a166;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+button {
+  border: none;
+  width: 145px;
+  height: 66px;
+  border-radius: 20px;
+  color:white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.cancelar {
+  background-color: #13a166;
+}
+
+.sim {
+  background-color: D9D9D9;
+  color: gray;
+} */

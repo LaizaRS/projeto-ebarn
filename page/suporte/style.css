@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray
+}
+
+.super-daddy {
+  display: flex;
+  background: #ffff;
+  height: 100vh;
+}
+iframe {
+  border: none;
+  height: auto;
+  width: 220px;
+}
+
+.direita {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+/* lista de clientes */
+.listas-de-clientes {
+  width: 360px;
+  overflow-y: auto;
+
+}
+
+.listas-de-clientes ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listas-de-clientes li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  border: 3px solid #858585ad;
+  width: 280px;
+  height: 51px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.listas-de-clientes li i {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #858585;
+  visibility: hidden;
+  font-weight: bolder;
+}
+
+.listas-de-clientes li:hover {
+  background: #13A166;
+  border: 3px solid #13A166;
+  color: white;
+}
+
+
+/* input area */
+.input-div {
+  position: sticky;
+  border-top: 1px solid white;
+  bottom: 0;
+  background-color: #e1e1e1; 
+  z-index: 1;
+}
+
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #13A166;
+  border-radius: 20px;
+  height: 40px;
+  width: 537px;
+  display: flex;
+  padding: 10px;
+  margin: 20px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.input-area i {
+  color: #13A166;
+  font-size: 30px;
+}
+
+.input-area input {
+  flex: 1; 
+  border: none; 
+  outline: none; 
+  padding: 0 10px; 
+  border-radius: 20px;
+  background: #dfdfdf97;
+}
+
+.input-area button {
+  font-size: 16px;
+  margin-right: 10px;
+  border: none;
+  background: #dfdfdf97;
+  cursor: pointer;
+}
+
+/* mini chat */
+.mini-chat{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px solid #85858581;
+  border-radius: 8px;
+  overflow-y: scroll; 
+  width: 600px;
+  margin: 20px;
+  align-items: flex-start;
+  background-color: #d4d4d4ad;
+  overflow-y: auto; 
+}
+
+.chat-messages {
+  padding: 10px;
+  max-width: 600px;
+}
+
+.chat-messages .resposta-green{
+  background-color: #13a166dd;
+  color: white;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.chat-messages .resposta-gray {
+  background-color: #8585859c;
+  color: #5c5c5c;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.resposta   {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+
+}
+
