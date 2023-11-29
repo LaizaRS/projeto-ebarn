@@ -8,32 +8,13 @@
   <link rel="stylesheet" href="menu_lateral.css">
 </head>
 <body>
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <div class="cabecalho">
-        <p>Deseja realmente sair?</p>
-        <i class="close ph ph-x"></i>
-      </div>
-     
-      <div class="verificacao">
-        <button id="cancelLogout">Cancelar</button>
-        <button id="confirmLogout">Sim</button>
-      </div>
-
-    </div>
-  </div>
-
-
-
-
-
     <div class="menu">
       <div class="logo">
         <img src="../img/logo-branca-horizontal 1.png" alt="logo">
       </div>
       <ul>
         <li>
-          <a href="../index.html" target="_top">
+          <a href="../page/tenant/index.html" target="_top">
             <i class="ph ph-users"></i>
             <p>Tenants</p>
         </a>
@@ -65,7 +46,21 @@
       </ul>
     </div>
 
-    <script src="modal.js"></script>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="cabecalho">
+          <p>Deseja realmente sair?</p>
+          <i class="close ph ph-x"></i>
+        </div>
+       
+        <div class="verificacao">
+          <button id="cancelLogout">Cancelar</button>
+          <button id="confirmLogout">Sim</button>
+        </div>
+  
+      </div>
+    </div>
 
+    <script src="modal.js"></script>
 </body>
 </html>

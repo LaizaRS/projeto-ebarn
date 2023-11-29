@@ -19,19 +19,15 @@ body {
 iframe {
   display: flex;
   justify-content: flex-start;
-  z-index: 1;
   position: absolute;
   border: none;
   height: 100vh;
-  width: 1225px;
 }
 
-.direita {
-  display: flex;
-  flex-direction: column;
-  margin-right: 15px;
-  margin-left: 220px;
-  width: 1100px;
+.direita{
+  margin-right: 20px;
+  margin-left: 190px;
+  width: 1000px;
 }
 
 .topo {
@@ -40,6 +36,21 @@ iframe {
   display: flex;
   justify-content: space-around;
   height: 132px;
+}
+
+.ajustes {
+  display: flex;
+}
+
+.ajustes p {
+  align-self: flex-end;
+  font-size: 14px;
+  color: gray;
+}
+
+ a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .topo i {
@@ -77,57 +88,33 @@ iframe {
   border-radius: 20px;
 }
 
-.lista-de-filtros {
+.lista-de-tenant {
   display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-}
-
-.lista-de-filtros ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  padding: 0px;
-  width: 100%;
-}
-
-.lista-de-filtros ul li {
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-  width: 120px;
-  height: 35px;
-  border-radius: 20px;
-  border: 1px solid #85858531;
-}
-
-.listas-de-modulos {
-  display: flex;
-  margin-left: 22px;
-  align-self: center;
   flex-direction: column; 
-  width: 972px;
   height: 80vh;
   overflow-y: auto;
+  align-self: center;
 }
 
-.listas-de-modulos ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; 
+.lista-de-tenant ul {
+  margin: auto;
+  columns: 2;
 }
 
-.listas-de-modulos ul li {
+.lista-de-tenant ul li {
+  background: #13A166;
   list-style: none;
-  border-top: 40px solid #13A166; 
-  border-right: 3px solid #13A166; 
-  border-bottom: 3px solid #13A166; 
-  border-left: 3px solid #13A166;
-  width: 213px;
-  height: 113px;
+  border: 1px solid black;
+  width: 426px;
+  height: 59px;
   border-radius: 8px;
-  margin-top: 30px;
+  margin-top: 10px;
+
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+.lista-de-tenant ul li:first-child{
+  margin-top: 0;
 }
