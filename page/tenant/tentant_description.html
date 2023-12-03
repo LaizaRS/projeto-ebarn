@@ -20,9 +20,21 @@
             <p>tentant 01</p>
           </a>
           <div class="flex-row">
-            <div class="switch">
+            <div id="myModal" class="switch" onclick="openModal()">
               <div class="switch-boll"></div>
             </div>
+            
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <p id="modalMessage"></p>
+                <div class="options">
+                  <button class="cancelar" onclick="closeModal()">Cancelar</button>
+                  <button class="desativar" onclick="changeSwitch()">Desativar</button>
+                </div>
+              </div>
+            </div>
+            
+            
             <a href="index.html"><i class="close ph ph-x"></i></a>
           </div>
         </div>
@@ -99,6 +111,6 @@
             </div>
       </div>
 
-
+<script src="swich.js"></script>
 </body>
 </html>
