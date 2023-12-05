@@ -1,4 +1,4 @@
-function openModal() {
+function openModalTentant() {
   const modal = document.getElementById('modal');
   const switchDiv = document.querySelector('.switch');
   const modalMessage = document.getElementById('modalMessage');
@@ -9,11 +9,13 @@ function openModal() {
     modalMessage.textContent = 'Ativar Tenant?';
     document.querySelector('.modal-content p').style.color = '#13A166';
     document.querySelector('.desativar').textContent = 'Ativar';
+    document.querySelector('.modal-content').style.border = '3px solid #13A166';
 
   } else {
     modalMessage.textContent = 'Desativar Tenant?';
     document.querySelector('.modal-content p').style.color = '#858585';
     document.querySelector('.desativar').textContent = 'Desativar';
+    document.querySelector('.modal-content').style.border = '3px solid #858585';
   }
 }
 
@@ -74,10 +76,43 @@ function applyColors(justify) {
   }
 }
 
-// Fechar o modal ao clicar fora dele
+
 window.onclick = function(event) {
   const modal = document.getElementById('modal');
   if (event.target === modal) {
     modal.style.display = 'none';
   }
 }
+
+
+// modal modulo 
+
+
+function openModalModulo() {
+  const modal = document.getElementById('modal-li');
+  const modalMessage = document.getElementById('modalMessageLi');
+  const modalContent = document.querySelector('.modal-content');
+
+  modal.style.display = 'block';
+
+  const computedStyles = window.getComputedStyle(modalContent);
+
+  if (computedStyles.borderColor === '#858585') {
+    modalMessage.textContent = 'Ativar Módulo?';
+    document.querySelector('.modal-content p').style.color = '#13A166';
+    document.querySelector('.desativar').textContent = 'Ativar';
+    modalContent.style.border = '3px solid #13A166';
+  } else if (computedStyles.borderColor === '#13A166') {
+    modalMessage.textContent = 'Desativar Módulo?';
+    document.querySelector('.modal-content p').style.color = '#858585';
+    document.querySelector('.desativar').textContent = 'Desativar';
+    modalContent.style.border = '3px solid #858585';
+  }
+}
+
+function closeModalModulo() {
+  const modal = document.getElementById('modal-li'); // Acessa o segundo modal
+  modal.style.display = 'none';
+}
+
+
